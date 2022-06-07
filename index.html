@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no">
+    <title>Kekkai Sensen Why you must to watch</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background: #505050;
+        }
+        #nav-bar{
+            width: 100%;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #navigation-bar{
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            height: 100%;
+        }
+        #navigation-bar li {
+            list-style: none;
+            height: 100%;
+            width: 25%;
+            padding: 12px 10px;
+        }
+        #navigation-bar li a{
+            display: flex;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 24px;
+            font-weight: 800;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-decoration: none;
+            width: 100%;
+            color: #000;
+        }
+        #navigation-bar li a:hover {
+            width: 100%;
+            padding: 10px;
+            color: black;
+            background: #fff;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            font-size: 28px;
+            border-radius: 20px;
+        }
+        #title {
+            display: block;
+            height: 12vh;
+            width: 100%;
+        }
+        header{
+            display: block;
+            margin-bottom: 5%;
+        }
+        #texto h1{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+        }
+        .texto-img {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+        }
+        .texto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 45%;
+        }
+        .texto h2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 700;
+            width: 80%;
+            font-size: 24px;
+            text-decoration: none;
+            flex-direction: row;
+            flex-wrap: wrap;
+            flex-grow: inherit;
+
+        }
+        .texto p{
+            display: flex;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+            max-width: 100%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            text-align: justify;
+        }
+        .img{
+            display: flex;
+            width: 45%;
+            justify-content: center;
+            align-items: center;
+            max-width: 45%;
+            margin-left: 8%;
+            
+        }
+        @keyframes ampli {
+            0%{
+                width: 80%;
+                align-items: center;
+                justify-content: center;
+            }
+            25%{
+                width: 65%;
+                align-items: flex-end;
+                justify-content: center;
+            }
+            50%{
+                width: 50%;
+                align-items: center;
+                justify-content: center;
+            }
+            75%{
+                width: 65%;
+                align-items: flex-start;
+                justify-content: center;
+            }
+            100%{
+                width: 80%;
+                align-items: center;
+                justify-content: center;
+            }
+            
+        }
+        .img img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            animation: ampli 15s infinite linear;
+        }
+        .texto2-img{
+            margin-top: 5%;
+            display: flex;
+            width: 100%;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .texto2-img p{
+            width: 45%;
+            text-align: justify;
+            margin-right: 5%;
+            font-size: 18px;
+            font-weight: 400;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .texto2{
+            width: 45%;
+        }
+        .texto2 h3{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            font-size: 32px;
+        }
+        .texto2 p{
+            width: 90%;
+            margin: 5%;
+            font-size: 18px;
+            font-weight: 400;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: justify;
+        }
+        .texto2-img img{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45%;
+            margin: 2.5%;
+        }
+        .personagens{
+            display: flex;
+            width: 90%;
+            height: 100vh;
+            flex-direction: column;
+            text-align: justify;
+            margin: 0px 5% 0px 5%;
+            align-items: center;
+        }
+        .texto3{
+            width: 90%;
+            height: 100%;
+        }
+        .texto3 p{
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 400;
+            text-align: justify;
+            margin: 0;
+            padding: 0;
+        }
+        .texto3 h2{
+            display: flex;
+            justify-content: center;
+            font-size: 24px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 700;
+        }
+        .texto3 strong{
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            align-items: center;
+        }
+        .anime{
+            width: 90%;
+            height: 60vh;
+            margin: 0 5%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .anime p{
+            width: 80%;
+            margin-top: 10%;
+            font-size: 24px;
+            font-weight: 700;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #referencias {
+            width: 90%;
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 5%;
+            flex-direction: column;
+        }
+        #referencias ul{
+            width: 100%;
+            height: 50%;
+            justify-content:space-between;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+        }
+        #referencias ul li{
+            display: flex;
+            width: 100%;
+            height: 50%;
+            justify-content: center;
+            align-items: center;
+            margin: 5%;
+        }
+        #referencias ul li a{
+            text-decoration: none;
+            font-size: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            color: black;
+        }
+        #referencias ul li a:hover{
+            display: flex;
+            padding: 0px 20px;
+            color: white;
+            background-color: #252525;
+            border: white;
+            font-size: 30px;
+            transition: 0.7s;
+            border-radius: 20px;
+        }
+        footer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #151515;
+            height: 10vh;
+            width: 100%;
+        }
+        footer ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            padding: 0%;
+        }
+        footer ul li{
+            height: 100%;
+            color: white;
+            width: 100%;
+            font: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 300;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        footer ul li:hover{
+            display: flex;
+            height: 100%;
+            width: 100%;
+            font: 700;
+            font-size: 24px;
+            font-family: Arial, Helvetica, sans-serif;
+            transition: 1s;
+            writing-mode: horizontal-tb;
+            color: white;
+            background: #000;
+        }
+        span{
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 700;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav id="nav-bar">
+            <ul id="navigation-bar">
+                <li><a href="#texto">Sobre o Anime</a></li>
+                <li><a href="#topico-2" >Sinopse</a></li>
+                <li><a href="#personagens" >Personagens</a></li>
+                <li><a href="#anime" >anime</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="texto">
+        <h1>Página sobre o anime Kekkai Sensen</h1>
+    </div>
+    <div class="texto-img" >
+        <div class="texto">
+            <h2>Blood Blockade Battlefront (japonês:血 界 戦 線 Kekkaisensen)</h2> 
+            <p>é um mangá shonen do mangaká Yasuhiro Nightow que teve seus capítulos lançados na Jump Square 
+                entre os anos de 2010 a 2015, 
+                quando a revista deixou de ser publicada. Shueisha compilou seus capítulos em dez volumes de tankōbon .
+                Em 2014 foi anunciado uma adaptação em anime do mangá, que foi exibida no mesmo ano. Com o sucesso, foi anunciado uma segunda temporada em 2016, 
+                que foi entitulada de Blood Blockade Battlefront & Beyond, e foi ao ar no ano seguinte. Em 2020, a Funimation adicionou o anime no catálogo, 
+                que inicialmente era legendado e não era dublado para o português, mas logo foram dublados os episódios.
+            </p>
+        </div>
+        <div class="img">
+            <img src="./img/pngegg (1).png" alt="personagens">
+        </div>
+        
+    </div>
+    <div class="texto2-img" id="topico-2">
+        <div class="texto2">
+            <h3 id="sinopse">Sinopse</h3>
+            <p>Uma brecha entre a Terra e os submundos abriu sobre a cidade de <em> Nova Iorque</em>, prendendo os <strong> nova-iorquinos </strong> e <strong> criaturas </strong> de outras dimensões em uma bolha impenetrável. 
+                Eles viveram juntos por anos, em um mundo louco cheio de crimes. Agora alguém está ameaçando romper a bolha, 
+                e um grupo de super-humanos elegantes está trabalhando para impedir que isso aconteça.</p>
+        </div>
+        <img src="./img/gif-1.gif">
+    </div>
+    <div class="personagens" id="personagens">
+        <div class="texto3">
+                <h2>Personagens principais</h2>
+                    <strong> <em> Leonardo Watch: </em>protagonista da série, </strong><br><p>
+                    Leo possui cabelos castanhos desalinhados e está normalmente vestindo uma camiseta branca de mangas azuis, com uma calça comprida também da mesma cor. 
+                    Usa um par de óculos amarelos que servem para proteger sua vista. Seu poder é o "Olhos Que Tudo Vêem dos Deuses", , 
+                    concedendo-lhe uma variedade de poderes oculares poderosos, ao custo da visão de sua irmã.
+                </p>
+                <br><br>
+                
+                    <strong> <em>Klaus Von Reinhertz: </em>  líder da Libra. </strong><br><p>
+                    Klaus é um homem de alta estatura, possui cabelos e costeletas vermelhas com um par de olhos verdes. Usa um colete preto sobre uma camiseta branca de manga longa, 
+                    calça da mesma cor, combinando com suas outras vestimentas e sapatos marrons.É bem honesto e cavalheiro, 
+                    está quase sempre calmo e fala de uma maneira educada, a menos que seja irritado, no caso, irá esmagar-lhe como uma besta selvagem. 
+                    Seu poder é o Técnica de Batalha de Sangue da Grade do Cérebro, que ele pode usar para criar grandes armamentos em forma de cruz e selar os inimigos.
+                </p>    
+                <br><br>
+                
+                    <strong> Zapp: Zapp é um homem alto e magro, </strong><br><p>
+                    de cabelos brancos na altura do pescoço e tem pele escura. Normalmente está usando uma camiseta preta com uma jaqueta branca de manga comprida por cima. 
+                    Usa também calça e botas da mesma cor. Ele é facilmente irritado, perdendo a calma muito rápido e suas ações muitas vezes podem colocá-lo em apuros. Mesmo assim, parece ser bom em tratar de novatos, como quando foi designado a cuidar de Leo assim que tal entrou na Libra. É muito mulherengo, possuindo diversas amantes pela cidade.
+                    Chain: Está sempre usando uma camiseta com tal pigmentação de manga longa com uma calça da mesma tonalidade e sapatos pretos. 
+                    Normalmente mantém uma postura séria, mas pode ser bem cruel com os outros. Às vezes, é até sádica, sempre causando danos físicos a alguém. 
+                    No entanto, se mostra bastante protetora com seus amigos, como quando passou o número de Angélica para que um de seus companheiros parasse de a importunar.
+                </p>
+                <br><br>
+            </div>
+    </div>
+    <div class="anime" id="anime">
+        <p>O anime foi produzido pelo <strong>Estúdio Bones, </strong> e foi exibido em 2014. 
+            Com o sucesso, a Bones lançou uma segunda temporada, entitulada Blood Blockade Battlefront & Beyond, que foi ao ar em 2017.
+             No ano de 2020, a Funimation adicionou as duas temporadas ao seu catálogo. 
+             No Brasil, o anime é exibido desde 15 de fevereiro na Loading, no programa Funimation TV. </p>
+    </div>
+    <div id="referencias">
+        <span>Referências: </span>
+        <ul>
+            <li><a href="https://pt.wikipedia.org/wiki/Blood_Blockade_Battlefront">Textos</a></li>
+            <li><a href="https://www.pngegg.com/en/search?q=kekkai+Sensen">Imagens</a></li>
+        </ul>
+    </div>
+    <footer>
+
+        <ul>
+            <li>Feito por: Pedro Victor Alves da Silva</li>
+        </ul>
+    </footer>
+</body>
+</html>
